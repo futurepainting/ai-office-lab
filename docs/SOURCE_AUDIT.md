@@ -162,3 +162,8 @@ AI Office Lab's `develop` branch has been updated so the existing CI definition 
 - No simplification to a three-agent-only system.
 - No weakening of sandboxing or circuit-breaker behavior.
 - No PRO feature circumvention or copying unavailable proprietary UI code.
+
+
+## CI activation note
+
+GitHub Actions was explicitly enabled on the fork after it was created. This draft PR is the first baseline change expected to exercise the inherited CI before any runtime refactor is merged.
