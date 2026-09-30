@@ -10,9 +10,13 @@
 export const PRODUCT_IDENTITY = {
   productName: 'Munder Difflin',
   defaultOrchestratorName: 'Michael',
-  updateRepository: 'chaitanyagiri/munder-difflin'
+  updateRepository: 'chaitanyagiri/munder-difflin',
+  deepLinkScheme: 'munderdifflin',
+  releaseArtifactPrefix: 'Munder-Difflin'
 } as const;
 
 export const PRODUCT_NAME: string = PRODUCT_IDENTITY.productName;
 export const DEFAULT_ORCHESTRATOR_NAME: string = PRODUCT_IDENTITY.defaultOrchestratorName;
 export const UPDATE_REPOSITORY: string = PRODUCT_IDENTITY.updateRepository;
+export const DEEP_LINK_SCHEME: string = PRODUCT_IDENTITY.deepLinkScheme;
+export const RELEASE_ARTIFACT_PREFIX: string = PRODUCT_IDENTITY.releaseArtifactPrefix;
