@@ -9,7 +9,7 @@
  */
 export const PRODUCT_IDENTITY = {
   productName: 'Munder Difflin',
-  defaultOrchestratorName: 'Michael',
+  defaultOrchestratorName: 'Manager',
   updateRepository: 'chaitanyagiri/munder-difflin',
   deepLinkScheme: 'munderdifflin',
   releaseArtifactPrefix: 'Munder-Difflin'
