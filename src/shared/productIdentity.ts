@@ -13,6 +13,6 @@ export const PRODUCT_IDENTITY = {
   updateRepository: 'chaitanyagiri/munder-difflin'
 } as const;
 
-export const PRODUCT_NAME = PRODUCT_IDENTITY.productName;
-export const DEFAULT_ORCHESTRATOR_NAME = PRODUCT_IDENTITY.defaultOrchestratorName;
-export const UPDATE_REPOSITORY = PRODUCT_IDENTITY.updateRepository;
+export const PRODUCT_NAME: string = PRODUCT_IDENTITY.productName;
+export const DEFAULT_ORCHESTRATOR_NAME: string = PRODUCT_IDENTITY.defaultOrchestratorName;
+export const UPDATE_REPOSITORY: string = PRODUCT_IDENTITY.updateRepository;
