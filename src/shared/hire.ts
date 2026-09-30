@@ -23,6 +23,7 @@
 
 import { mcpCatalogEntry } from './mcpCatalog';
 import { MAX_AGENT_TOKEN_CAP } from './tokenCaps';
+import { DEEP_LINK_SCHEME } from './productIdentity';
 
 export const HIRE_SPEC_V1 = 'munder-difflin/hire@1';
 
@@ -322,7 +323,7 @@ export function validateHireManifest(raw: unknown): HireValidation {
 export function parseHireDeepLink(link: string): string | null {
   let u: URL;
   try { u = new URL(link); } catch { return null; }
-  if (u.protocol !== 'munderdifflin:') return null;
+  if (u.protocol !== `${DEEP_LINK_SCHEME}:`) return null;
   // Both munderdifflin://hire?src= (host) and munderdifflin:hire?src= (path).
   const action = (u.host || u.pathname.replace(/^\/+/, '')).toLowerCase();
   if (action !== 'hire') return null;
