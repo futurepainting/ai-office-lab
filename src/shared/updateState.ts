@@ -1,4 +1,4 @@
-import { UPDATE_REPOSITORY } from './productIdentity';
+import { RELEASE_ARTIFACT_PREFIX, UPDATE_REPOSITORY } from './productIdentity';
 
 /**
  * Auto-update status model + presentation mapping.
@@ -42,9 +42,9 @@ export const REPO = UPDATE_REPOSITORY;
  *  `downloadUrl` of its own (the native updater path never does). */
 export function installerUrl(version: string, platform: string, arch: string): string {
   const v = version.replace(/^v/, '');
-  const file = platform === 'darwin' ? `Munder-Difflin-${v}-mac-${arch}.dmg`
-    : platform === 'win32' ? `Munder-Difflin-${v}-win-x64-setup.exe`
-    : `Munder-Difflin-${v}-linux-x86_64.AppImage`;
+  const file = platform === 'darwin' ? `${RELEASE_ARTIFACT_PREFIX}-${v}-mac-${arch}.dmg`
+    : platform === 'win32' ? `${RELEASE_ARTIFACT_PREFIX}-${v}-win-x64-setup.exe`
+    : `${RELEASE_ARTIFACT_PREFIX}-${v}-linux-x86_64.AppImage`;
   return `https://github.com/${REPO}/releases/download/v${v}/${file}`;
 }
 
