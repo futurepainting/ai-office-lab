@@ -1,6 +1,8 @@
+import { DEFAULT_ORCHESTRATOR_NAME } from './productIdentity';
+
 /** God's identity before anyone has customized it — the app's own default,
  *  not a magic string sprinkled at every spawn call site. */
-export const DEFAULT_GOD_NAME = 'Michael';
+export const DEFAULT_GOD_NAME = DEFAULT_ORCHESTRATOR_NAME;
 
 /**
  * Resolve god's display name for a (re)spawn.

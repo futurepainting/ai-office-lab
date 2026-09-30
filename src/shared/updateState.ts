@@ -1,3 +1,5 @@
+import { UPDATE_REPOSITORY } from './productIdentity';
+
 /**
  * Auto-update status model + presentation mapping.
  *
@@ -33,7 +35,7 @@ export type UpdateStatus =
 
 export type UpdateAction = 'none' | 'check' | 'download' | 'restart' | 'open-release' | 'manual';
 
-export const REPO = 'chaitanyagiri/munder-difflin';
+export const REPO = UPDATE_REPOSITORY;
 
 /** The installer for THIS machine in the release tagged v{version}, by the
  *  names electron-builder.yml produces. Used when a status carries no
