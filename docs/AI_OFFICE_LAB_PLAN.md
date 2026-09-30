@@ -63,3 +63,8 @@ Avoid direct product refactors on `main`.
 ## Current working assumption
 
 The public source already contains the core multi-agent engine needed for this project. The professional workspace shipped in current binaries may not be fully represented in the public repository, so AI Office Lab should not depend on proprietary or unavailable Pro UI code. The plan is to reuse the open runtime and build an independent product surface.
+
+
+## Baseline CI
+
+GitHub Actions is enabled on the fork. The `develop` branch is used to exercise the untouched upstream typecheck/build path, including a Windows baseline job before product refactors begin.
